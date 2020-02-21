@@ -1,3 +1,7 @@
+body{
+	font-family: Serif;
+}
+
 h1{
 	font-size: 28pt;
 	text-align: center;
@@ -30,8 +34,13 @@ h1{
     color: #fff;
 }
 
-#otherpage nav{
-    color: #000;
+#otherpage nav a{
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+
+.highlight-other, .highlight-index, .highlight-film, .highlight-photo{
+	text-decoration: underline;
 }
 
 nav li{
