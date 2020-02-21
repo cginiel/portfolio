@@ -3,12 +3,35 @@ h1{
 	text-align: center;
 }
 
-body{
+#homepage{
 	background: #DDD url("../images/up-highway.jpg") no-repeat;
 	background-size: cover;
     background-position: center;
     /*how do i set a min-width for my bg?*/
     /*padding: 300px;*/
+}
+
+#photopage{
+	background: #DDD url("../images/lake-superior-kayak.jpg") no-repeat;
+	background-size: cover;
+    background-position: center;
+}
+
+#filmpage{
+	background: #DDD url("../images/belleisle.jpeg") no-repeat;
+	background-size: cover;
+    background-position: center;
+}
+
+#otherpage{
+	background: #DDD url("../images/argo.jpg") no-repeat;
+	background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#otherpage nav{
+    color: #000;
 }
 
 nav li{
@@ -52,6 +75,7 @@ footer{
 
 #photo-description{
 	text-align: center;
+	color: #fff;
 	padding: 50px;
 }
 
