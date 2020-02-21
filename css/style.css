@@ -9,9 +9,13 @@ h1{
 
 #homepage{
 	background: #DDD url("../images/up-highway.jpg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
     background-position: center;
+    height: 400px;
+    /*margin-bottom: 1000px;*/
     /*how do i set a min-width for my bg?*/
+    /*how do i bump my bg up and down before fixing it?*/
     /*padding: 300px;*/
 }
 
@@ -74,6 +78,7 @@ footer{
     color: #fff;
     min-height: 60px;
     padding-top: 20px;
+    text-transform: lowercase;
 }
 
 #intro{
