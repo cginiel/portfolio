@@ -47,4 +47,20 @@ footer{
 #intro{
 	/*font-size: 1.5em;*/
 	text-align: center;
+	padding: 50px;
+}
+
+#photo-description{
+	text-align: center;
+	padding: 50px;
+}
+
+#film-description{
+	text-align: center;
+	padding: 50px;
+}
+
+#design-description{
+	text-align: center;
+	padding: 50px;
 }
