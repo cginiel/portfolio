@@ -21,20 +21,26 @@ h1{
 
 #photopage{
 	background: #DDD url("../images/lake-superior-kayak.jpg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
     background-position: center;
+    height: 400px;
 }
 
 #filmpage{
 	background: #DDD url("../images/belleisle.jpeg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
     background-position: center;
+    height: 400px;
 }
 
 #otherpage{
 	background: #DDD url("../images/argo.jpg") no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
     background-position: center;
+    height: 400px;
     color: #fff;
 }
 
@@ -89,7 +95,6 @@ footer{
 
 #photo-description{
 	text-align: center;
-	color: #fff;
 	padding: 50px;
 }
 
