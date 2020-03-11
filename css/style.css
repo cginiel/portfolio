@@ -8,6 +8,26 @@ h1{
 	padding-top: 30px;
 }
 
+/*******SKIP TO MAIN********/
+.skip a{
+  background: #fff;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+
+  position: absolute;
+  top: -40px; 
+  /*what else should I use other than margin top?*/
+}
+
+.skip a:focus{
+  top: 0px;
+  border: 2px solid #000;
+}
+/***************************/
+
 #homepage{
 	background: #DDD url("../images/up-highway.jpg") no-repeat;
 	background-attachment: fixed;
@@ -45,7 +65,7 @@ h1{
     color: #fff;
 }
 
-
+/* highlights the active webpage in the nav*/
 .highlight-other, .highlight-index, .highlight-film, .highlight-photo{
 	text-decoration: underline;
 }
@@ -54,7 +74,6 @@ nav li{
   display: inline;
   padding-right: 20px;
   /*desktop media query: padding-right: 50px;*/
-
 }
 
 nav a{
@@ -108,3 +127,11 @@ footer{
 	text-align: center;
 	padding: 50px;
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    -webkit-transition: none;
