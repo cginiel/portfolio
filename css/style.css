@@ -144,13 +144,26 @@ nav{
 	overflow: hidden;
 	grid-column-start: 2;
 	grid-column-end: 3;
-	border: 10px solid white;
+	border: 5px solid white;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
+              0 2px 2px rgba(0,0,0,0.24), 
+              0 4px 4px rgba(0,0,0,0.24), 
+              0 8px 8px rgba(0,0,0,0.24),
+              0 16px 16px rgba(0,0,0,0.24);
 }
 
 .photos-text-block{
 	grid-column-start: 2;
 	grid-column-end: 3;
+
+	box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
+              0 2px 2px rgba(0,0,0,0.24), 
+              0 4px 4px rgba(0,0,0,0.24), 
+              0 8px 8px rgba(0,0,0,0.24),
+              0 16px 16px rgba(0,0,0,0.24);
 }
+/* box shadow from https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
 
 .photos-text-block p{
 	background: #fff;
