@@ -133,20 +133,23 @@ nav{
 	display: grid;
 	grid-row-gap: 20px;
     grid-column-gap: 20px;
-	grid-template-columns: 1fr; /* mobile first query */
+	grid-template-columns: 10px auto 10px; /* mobile first query */
 	grid-template-rows: auto auto auto;
 	margin-bottom: 50px;
     /*width: 90vw;*/
+    /*how do i center the elements in my grid?*/
 }
 
 .img-one, .img-two{
 	overflow: hidden;
-	grid-column: 1 / -1;
+	grid-column-start: 2;
+	grid-column-end: 3;
 	border: 10px solid white;
 }
 
 .photos-text-block{
-	grid-column: 1 / -1;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 
 .photos-text-block p{
