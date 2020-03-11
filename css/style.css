@@ -8,7 +8,9 @@ h1{
 	padding-top: 30px;
 }
 
+/***************************/
 /*******SKIP TO MAIN********/
+/***************************/
 .skip a{
   background: #fff;
   left: 0;
@@ -70,6 +72,9 @@ h1{
 	text-decoration: underline;
 }
 
+/***************************/
+/*****   nav styles   ******/
+/***************************/
 nav li{
   display: inline;
   padding-right: 20px;
@@ -91,21 +96,7 @@ nav{
 	padding: 15px;
 	background-color: #000;
 }
-
-footer{
-	font-size: .75em;
-	position: fixed;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    background: #000;
-    text-align: center;
-    color: #fff;
-    min-height: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-transform: lowercase;
-}
+/***************************/
 
 #intro{
 	/*font-size: 1.5em;*/
@@ -127,6 +118,48 @@ footer{
 	text-align: center;
 	padding: 50px;
 }
+
+/***************************/
+/** photos grid container **/
+/***************************/
+
+.grid-container{
+	display: grid;
+	grid-row-gap: 20px;
+    grid-column-gap: 20px;
+	grid-template-columns: 1fr; /* mobile first query */
+	grid-template-rows: 1fr 1fr;
+	margin: auto;
+    /*width: 95vw;*/
+}
+
+.img-one, .img-two{
+	overflow: hidden;
+	grid-column: 1 / -1;
+	max-width: 100px;
+	max-height: 100px;
+	/*how do I size my photos properly???????*/
+
+}
+
+/***************************/
+/******** footer ***********/
+/***************************/
+footer{
+	font-size: .75em;
+	position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    min-height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: lowercase;
+}
+/***************************/
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
