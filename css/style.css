@@ -136,10 +136,13 @@ nav{
 .img-one, .img-two{
 	overflow: hidden;
 	grid-column: 1 / -1;
-	max-width: 100px;
-	max-height: 100px;
 	/*how do I size my photos properly???????*/
 
+}
+
+img{
+    max-width: 400px;
+	height: auto;
 }
 
 /***************************/
