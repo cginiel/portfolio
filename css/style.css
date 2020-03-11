@@ -2,10 +2,14 @@ body{
 	font-family: Serif;
 }
 
+p{
+	line-height: 1.15;
+}
+
 h1{
 	font-size: 28pt;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 60px;
 }
 
 /***************************/
@@ -92,6 +96,8 @@ nav a:hover{
 }
 
 nav{
+	position: fixed;
+	width: 100%;
 	text-align: center;
 	padding: 15px;
 	background-color: #000;
@@ -106,7 +112,7 @@ nav{
 
 #photo-description{
 	text-align: center;
-	padding: 50px;
+	padding: 30px;
 }
 
 #film-description{
@@ -123,26 +129,36 @@ nav{
 /** photos grid container **/
 /***************************/
 
-.grid-container{
+.photos-grid-container{
 	display: grid;
 	grid-row-gap: 20px;
     grid-column-gap: 20px;
 	grid-template-columns: 1fr; /* mobile first query */
-	grid-template-rows: 1fr 1fr;
-	margin: auto;
-    /*width: 95vw;*/
+	grid-template-rows: auto auto auto;
+	margin-bottom: 50px;
+    /*width: 90vw;*/
 }
 
 .img-one, .img-two{
 	overflow: hidden;
 	grid-column: 1 / -1;
-	/*how do I size my photos properly???????*/
+	border: 10px solid white;
+}
 
+.photos-text-block{
+	grid-column: 1 / -1;
+}
+
+.photos-text-block p{
+	background: #fff;
+	padding: 20px;
 }
 
 img{
-    max-width: 400px;
-	height: auto;
+	display: block;
+    max-width: 100%;
+    max-height: auto;
+	/*you're going to want to make this selector specific to your photos page*/
 }
 
 /***************************/
