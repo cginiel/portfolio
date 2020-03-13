@@ -9,7 +9,7 @@ p{
 h1{
 	font-size: 28pt;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 /***************************/
@@ -81,7 +81,7 @@ h1{
 /***************************/
 nav li{
   display: inline;
-  padding-right: 20px;
+  padding-right: 50px;
   /*desktop media query: padding-right: 50px;*/
 }
 
@@ -140,7 +140,7 @@ nav{
     /*how do i center the elements in my grid?*/
 }
 
-.img-one, .img-two{
+.img-one, .img-two, .img-three, .img-four, .img-five{
 	overflow: hidden;
 	grid-column-start: 2;
 	grid-column-end: 3;
