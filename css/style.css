@@ -32,7 +32,6 @@ p{
 
   position: absolute;
   top: -40px; 
-  /*what else should I use other than margin top?*/
 }
 
 .skip a:focus{
@@ -61,8 +60,8 @@ p{
   height: 400px;
 }
 
-#filmpage{
-	background: #DDD url("../images/belleisle.jpeg") no-repeat;
+#newyorkpage{
+	background: #DDD url("../images/newyork/museum-superwide.jpg") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
   background-position: center;
@@ -79,7 +78,7 @@ p{
 }
 
 /* highlights the active webpage in the nav*/
-.highlight-other, .highlight-index, .highlight-film, .highlight-photo{
+.highlight-other, .highlight-index, .highlight-newyork, .highlight-photo{
 	text-decoration: underline;
 }
 
@@ -126,7 +125,7 @@ nav{
 #intro{
 	/*font-size: 1.5em;*/
 	text-align: center;
-	padding: 50px;
+	padding: 30px;
 }
 
 #photo-description{
@@ -134,14 +133,14 @@ nav{
 	padding: 30px;
 }
 
-#film-description{
+#newyork-description{
 	text-align: center;
-	padding: 50px;
+	padding: 30px;
 }
 
 #design-description{
 	text-align: center;
-	padding: 50px;
+	padding: 30px;
 }
 
 /***************************/
