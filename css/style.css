@@ -61,7 +61,7 @@ p{
 }
 
 #newyorkpage{
-	background: #DDD url("../images/newyork/museum-superwide.jpg") no-repeat;
+	background: #DDD url("../images/newyork/picofapic.jpg") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
   background-position: center;
@@ -180,7 +180,10 @@ nav{
 	grid-row-gap: 20px;
   grid-column-gap: 20px;
 	grid-template-columns: auto; /* mobile first query */
-	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto 
+                      auto auto auto 
+                      auto auto auto 
+                      auto auto;
   align-items: center;
 	margin-bottom: 50px;
     /*width: 90vw;*/
@@ -188,6 +191,7 @@ nav{
 }
 
 .photos-text-block{
+  grid-column: 1 / 2;
   box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
               0 2px 2px rgba(0,0,0,0.24), 
               0 4px 4px rgba(0,0,0,0.24), 
@@ -196,7 +200,7 @@ nav{
               0 32px 32px rgba(0,0,0,0.24);
 }
 
-/* box shadow from https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
+/* box shadow (that I've tweaked slightly) from https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
 
 .photos-text-block p{
   text-align: justify;
@@ -205,8 +209,14 @@ nav{
   padding: 20px;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+}
+
 .img-one, .img-two, .img-three, 
-.img-four, .img-five, .img-six{
+.img-four, .img-five, .img-six, 
+.img-seven, .img-eight, .img-nine{
   grid-column: 1 / 2;
   border: 5px solid white;
 
@@ -221,8 +231,9 @@ nav{
 /***************************/
 /***** grid positions ******/
 /***************************/
+
+/******* photos page *******/
 .photos-about{
-  grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
@@ -253,13 +264,39 @@ nav{
 .img-six{
   grid-row: 8 / 9;
 }
-
-.img-one img, .img-two img, .img-three img, 
-.img-four img, .img-five img, .img-six img{
-	display: block;
-  max-width: 100%;
-  /*max-height: auto;*/
+/***** new york page *******/
+.newyork-about{
+  grid-row: 1 / 2;
 }
+
+.newyork-texting{
+  grid-row: 5 / 6;
+}
+
+#newyorkpage .img-four{
+  grid-row: 6 / 7;
+}
+
+#newyorkpage .img-five{
+  grid-row: 7 / 8;
+}
+
+#newyorkpage .img-six{
+  grid-row: 8 / 9;
+}
+
+#newyorkpage .img-seven{
+  grid-row: 9 / 10;
+}
+
+#newyorkpage .img-eight{
+  grid-row: 10 / 11;
+}
+
+#newyorkpage .img-nine{
+  grid-row: 11 / 12;
+}
+
 
 /***************************/
 /******** footer ***********/
@@ -409,6 +446,7 @@ footer{
     grid-row: 3 / 5;
   }
 
+/******** flex ******/
   .nav-links{
   flex-direction: row;
   justify-content: flex-start;
