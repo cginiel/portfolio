@@ -581,9 +581,16 @@ footer{
 }
 /* reduce motion media query*/
 @media screen and (prefers-reduced-motion: reduce){
+  *{
+    animation-duration: 0s;
+    transition: none;
+    scroll-behavior: auto;
+  }
   html{
       scroll-behavior: auto;
   }
 
   .skip a{
     -webkit-transition: none;
+  }
+}
