@@ -69,7 +69,8 @@ p{
 }
 
 #newyorkpage .photos-gallery img:hover,
-#photopage .photos-gallery img:hover{
+#photopage .photos-gallery img:hover,
+#otherpage .photos-gallery img:hover{
   border: 5px solid white;
   transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
