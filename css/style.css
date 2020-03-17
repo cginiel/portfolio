@@ -69,6 +69,10 @@ p{
 }
 
 #otherpage{
+  background: rgba(0, 30, 0, .6);
+}
+
+#otherpage header{
 	background: #DDD url("../images/argo.jpg") no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -76,6 +80,11 @@ p{
   height: 400px;
   color: #fff;
 }
+
+#otherpage h1{
+  color: black;
+}
+
 
 /* highlights the active webpage in the nav*/
 .highlight-other, .highlight-index, .highlight-newyork, .highlight-photo{
