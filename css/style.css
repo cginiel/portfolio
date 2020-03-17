@@ -68,6 +68,24 @@ p{
   height: 400px;
 }
 
+#newyorkpage .photos-gallery img:hover,
+#photopage .photos-gallery img:hover{
+  border: 5px solid white;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+
+  box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
+              0 2px 2px rgba(0,0,0,0.24), 
+              0 4px 4px rgba(0,0,0,0.24), 
+              0 8px 8px rgba(0,0,0,0.24),
+              0 16px 16px rgba(0,0,0,0.24),
+              0 32px 32px rgba(0,0,0,0.24);
+}
+
 #otherpage{
   background: rgba(0, 30, 0, .6);
 }
@@ -262,8 +280,6 @@ img{
   grid-row: 4 / 5;
 }
 
-
-
 /******* photos page *******/
 .photos-about{
   grid-row: 1 / 2;
@@ -329,6 +345,19 @@ img{
   grid-row: 11 / 12;
 }
 
+/***** other page *******/
+#otherpage .photos-gallery{
+  margin-top: 15px;
+}
+
+#otherpage .img-three{
+  transform: rotate(180deg);
+}
+
+#otherpage .img-five{
+  transform: rotate(90deg);
+  margin: 65px;
+}
 
 /***************************/
 /******** footer ***********/
@@ -513,6 +542,39 @@ footer{
     grid-row: 7 / 8;
   }
 
+  /******************************************/
+  /*****  other page grid placement      ****/
+  /******************************************/
+  #otherpage .other-info{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  #otherpage .img-one{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #otherpage .img-two{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #otherpage .img-three{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #otherpage .img-four{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  #otherpage .img-five{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+  }
+
   /***************************/
   /*****   nav flex     ******/
   /***************************/
@@ -669,6 +731,25 @@ footer{
   #newyorkpage .img-nine{
     grid-column: 1 / 4;
     grid-row: 5 / 6;
+  }
+
+  /******************************************/
+  /*****  other page grid placement      ****/
+  /******************************************/
+
+  #otherpage .photos-gallery{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto
+  }
+
+  #otherpage .other-info{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  #otherpage .img-two{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 
   /***************************/
