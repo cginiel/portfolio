@@ -145,34 +145,18 @@ nav{
 	padding: 30px;
 }
 
-/***************************/
-/*****   home styles   *****/
-/***************************/
-.home-text-block{
-  min-width: 70px;
+/* home styles */
+.home-more-info a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
-
-.home-text-block p{
-  background: #fff;
-  margin: 15px;
-  padding: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-
-  box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
-              0 2px 2px rgba(0,0,0,0.24), 
-              0 4px 4px rgba(0,0,0,0.24), 
-              0 8px 8px rgba(0,0,0,0.24),
-              0 16px 16px rgba(0,0,0,0.24),
-              0 32px 32px rgba(0,0,0,0.24);
-}
-
 
 /***************************/
 /** photos grid container **/
 /***************************/
 
-.photos-grid-container{
+.grid-container{
   width: 85%;
   margin: 0 auto;
 }
@@ -192,7 +176,7 @@ nav{
     /*how do i center the elements in my grid?*/
 }
 
-.photos-text-block{
+.text-block{
   grid-column: 1 / 2;
   box-shadow: 0 1px 1px rgba(0,0,0,0.24), 
               0 2px 2px rgba(0,0,0,0.24), 
@@ -204,7 +188,7 @@ nav{
 
 /* box shadow (that I've tweaked slightly) from https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
 
-.photos-text-block p{
+.text-block p{
   text-align: justify;
   text-justify: inter-word;
   background: #fff;
@@ -233,6 +217,43 @@ img{
 /***************************/
 /***** grid positions ******/
 /***************************/
+
+/***** homepage *******/
+#homepage .photos-gallery{
+  grid-template-columns: auto auto auto;
+}
+
+.home-about{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+#homepage .img-one{
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.home-more-info{
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+}
+
+#homepage .img-two{
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+#homepage .img-three{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+#homepage .img-four{
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+
 
 /******* photos page *******/
 .photos-about{
@@ -336,14 +357,56 @@ footer{
   }
 
   /****************************/
-  /*photos page grid placement*/
+  /** grid templates          */
   /****************************/
   .photos-gallery{
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto auto auto auto auto auto;
-
   }
-  .photos-text-block{
+
+  /****************************/
+  /** homepage grid placement */
+  /****************************/
+
+  #homepage .photos-gallery{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+  }
+
+  .home-about{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  #homepage .img-one{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #homepage .home-more-info{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #homepage .img-two{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #homepage .img-three{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  #homepage .img-four{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
+
+  /****************************/
+  /*photos page grid placement*/
+  /****************************/
+  .text-block{
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
@@ -452,14 +515,43 @@ footer{
 }
 
 @media only screen and (min-width: 1024px){
-  /***************************/
-  /*****   home page    ******/
-  /***************************/
-  .home-text-block{
-    max-width: 50%;
-    margin: 0 auto;
+  /****************************/
+  /* homepage grid placement  */
+  /****************************/
+  #homepage .photos-gallery{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
   }
 
+  #homepage .home-about{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  #homepage .img-one{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #homepage .home-more-info{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #homepage .img-two{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #homepage .img-three{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  #homepage .img-four{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  }
 
   /****************************/
   /*photos page grid placement*/
@@ -472,7 +564,7 @@ footer{
     grid-template-rows: auto auto auto auto auto;
 
   }
-  .photos-text-block{
+  .text-block{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
