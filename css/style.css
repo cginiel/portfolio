@@ -129,6 +129,13 @@ p{
   transform-origin: bottom center;
 }
 
+#newyorkpage .animation img,
+#otherpage .animation img{
+  padding-top: 40px;
+}
+
+
+
 @-webkit-keyframes wave{
   0%{
     -webkit-transform: rotate(0deg);
