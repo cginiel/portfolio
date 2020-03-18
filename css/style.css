@@ -76,10 +76,10 @@ p{
 #photopage .photos-gallery img:hover,
 #otherpage .photos-gallery img:hover{
   border: 5px solid white;
-  transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 
@@ -462,6 +462,9 @@ img{
 
 #otherpage .img-three{
   transform: rotate(180deg);
+  /*there's a bug with .img-three and .img-four here where the
+  transform property sends them in front of my fixed nav bar.
+  what's up with that?*/
 }
 
 #otherpage .img-five{
