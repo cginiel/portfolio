@@ -19,7 +19,7 @@ p{
 }
 
 *:focus{
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 /***************************/
@@ -96,14 +96,13 @@ p{
 /***************************/
 
 .animation img{
-  display: block;
   max-width: 80px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   transform-origin: bottom center;
 }
 
-@-webkit-keyframes rotate{
+@-webkit-keyframes wave{
   0%{
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -121,7 +120,7 @@ p{
 
 } 
 
-@keyframes rotate{
+@keyframes wave{
   0%{
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -140,11 +139,13 @@ p{
 } 
 
 .animation{
-  -webkit-animation: rotate 2.25s linear 0s infinite normal both;
-  -o-animation: rotate 2.25s linear 0s infinite normal both;
-  animation: rotate 2.25s linear 0s infinite normal both;
+  -webkit-animation: wave 2.25s cubic-bezier(.68,-0.55,.27,1.55) 0s infinite normal both;
+  -o-animation: wave 2.25s cubic-bezier(.68,-0.55,.27,1.55) 0s infinite normal both;
+  animation: wave 2.25s cubic-bezier(.68,-0.55,.27,1.55) 0s infinite normal both;
 }
-
+/******************************************************/
+/* animation inspired by https://amc.alliedmedia.org/ */
+/******************************************************/
 
 
 #otherpage{
@@ -835,5 +836,8 @@ footer{
 
   .skip a{
     -webkit-transition: none;
+  }
+  .animation{
+    animation-duration: 0s;
   }
 }
