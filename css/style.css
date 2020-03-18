@@ -175,6 +175,10 @@ p{
   transform: rotateY(180deg);
 }
 
+.flip-card-inner:focus {
+  transform: rotateY(180deg);
+}
+
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -277,7 +281,7 @@ nav{
 /***************************/
 fieldset{
    border-radius: 10px;
-   font-size: .75em;
+   font-size: .70em;
 }
 legend{
    text-align: center;
@@ -941,7 +945,7 @@ footer{
 }
 
 }
-/* reduce motion media query*/
+/* reduce motion media query */
 @media screen and (prefers-reduced-motion: reduce){
   *{
     animation-duration: 0s;
@@ -950,6 +954,12 @@ footer{
   }
   html{
       scroll-behavior: auto;
+  }
+
+  .flip-card-inner {
+  -webkit-transition: none;
+  transition: none;
+  transform-style: preserve-3d;
   }
 
   .skip a{
