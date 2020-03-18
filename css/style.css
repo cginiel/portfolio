@@ -7,6 +7,33 @@ h1{
 	font-size: 1em;
 	text-align: center;
 	padding-top: 120px;
+
+    color: #131313;
+    /*background-color: #e7e5e4;*/
+    /*letter-spacing: .15em;*/
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 3px 1px #767474, 
+      -3px 4px 1px #787777, 
+      -4px 5px 1px #7b7a7a, 
+     
+      -5px 10px 1px #8b8a89, 
+      -6px 12px 1px #8f8e8d, 
+      -7px 14px 1px #949392, 
+      -8px 16px 1px #999897, 
+      -9px 18px 1px #9e9c9c, 
+    
+      -10px 20px 1px #b7b6b5, 
+      -11px 22px 1px #bcbbba, 
+      -12px 24px 1px #c1bfbf, 
+      -13px 26px 1px #c6c4c4, 
+      -14px 28px 1px #cbc9c8, 
+     
+  
+      -16px 30px 1px #dfdddc, 
+      -17px 32px 1px #e2e0df, 
+      -18px 34px 1px #e4e3e2;
 }
 
 h2{
