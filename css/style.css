@@ -252,10 +252,12 @@ p{
   background-position: center;
   height: 400px;
   color: #fff;
+  padding-top: 150px;
 }
 
 #otherpage h1{
   color: black;
+  margin-top: -150px;
 }
 
 
