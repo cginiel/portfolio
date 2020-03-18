@@ -235,6 +235,7 @@ p{
 /* highlights the active webpage in the nav*/
 .highlight-other, .highlight-index, .highlight-newyork, .highlight-photo{
 	text-decoration: underline;
+  font-style: italic;
 }
 
 /***************************/
