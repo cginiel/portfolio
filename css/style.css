@@ -990,7 +990,22 @@ footer{
     scroll-behavior: auto;
   }
   html{
-      scroll-behavior: auto;
+    scroll-behavior: auto;
+  }
+
+  #newyorkpage .photos-gallery img:hover,
+  #photopage .photos-gallery img:hover,
+  #otherpage .photos-gallery img:hover{
+    border: none;
+    transition: 0s;
+    -webkit-transition: 0s;
+    transform: none;
+    -webkit-transform: none;
+    box-shadow: none;
+  }
+
+  #otherpage header{
+    background-attachment: inherit;
   }
 
   .flip-card-inner {
