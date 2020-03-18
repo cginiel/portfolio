@@ -211,6 +211,54 @@ nav{
 }
 
 /***************************/
+/*****      form      ******/
+/***************************/
+fieldset{
+   border-radius: 10px;
+   font-size: .75em;
+}
+legend{
+   text-align: center;
+}
+
+.contact{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   /*get comfortable mixing auto and 1fr, etc.*/
+   grid-row-gap: 5px;
+   grid-column-gap: 5px;
+
+   border: 2px solid black;
+   margin: 2%;
+   padding: 2%;
+   border-radius: 4px;
+}
+
+.form-buttons{
+  grid-column: 1 / 2;
+}
+
+input[type=reset], input[type=submit]{
+   border: 2px solid black;
+   border-radius: 5px;
+   width: 120px;
+   padding: 2%;
+   margin-left: 10%;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+input, textarea, select{
+   background-color:#FFFFFF;
+}
+
+input:focus{
+   background: lightgrey;
+   border: 2px solid black;
+}
+
+/***************************/
 /***** page headers   ******/
 /***************************/
 #intro{
@@ -635,6 +683,11 @@ footer{
   #otherpage .img-five{
     grid-column: 3 / 4;
     grid-row: 4 / 5;
+  }
+
+  .form{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
   }
 
   /***************************/

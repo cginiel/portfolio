@@ -35,6 +35,46 @@
         	<div class="img-four"><img src="images/other/moon.jpg" alt="the moon on a summer evening"/></div>
         	<div class="img-five"><img src="images/other/winter-morning.jpg" alt="the moon on a dark frosty morning"/></div>
 
+          <div class="form">
+          <form action="https://formspree.io/meqzkvdb" method="POST">
+            <!-- github does not like POST. it likes GET -->
+          <fieldset>
+             <legend>contact me</legend>
+             <div class = "contact">
+                <label for ="first">first name:</label>
+                <input type="text" id ="first" name="fname" placeholder ="please enter your christian name (required)" required/> 
+                <!-- placeholder is a greyed out value -->
+
+                <label for ="last">last name:</label>
+                <input type="text" id ="last" name="lname" placeholder ="please enter your family name (required)" required/> 
+                <!-- value is solid black, it's a true value entry -->
+                <!-- required is a boolean. you can't complete the form w/o it -->
+                <!-- better to use 'required' as a placeholder than to indicate with color or asterisk (accessibility) -->
+
+                <label for ="email">email:</label>
+                <input type="email" id="email" name ="email" placeholder="example@gmail.com (required, if you want a response)" required/>
+
+                <label for="color">favorite color</label>
+                <select id="color" name="color" required>
+                  <option value="" disabled selected>select a color</option>
+                  <option value="blue">blue</option>
+                  <option value="yellow">yellow</option>
+                  <option value="red">red</option>
+                </select>
+                <p>(yes, it must be a primary color.)</p><br/>
+
+                <label for ="addl">additional info:</label>
+                <textarea id = "addl" name="addl" placeholder="say anything"></textarea>
+                <!-- "you actually have to style the text area tag" also it won't take a value attribute -->
+                <div class="form-buttons">
+                  <input type="reset" value ="reset"/>
+                  <input type="submit" value ="submit"/>
+               </div>
+             </div>
+           </fieldset>
+           </form>
+         </div>
+
         </div>
       </div>
 
