@@ -669,6 +669,7 @@ footer{
   .photos-gallery{
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto auto auto auto auto auto;
+    margin-bottom: 50px;
   }
 
   /****************************/
@@ -860,6 +861,13 @@ footer{
 }
 
 @media only screen and (min-width: 1024px){
+
+  .photos-gallery{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin-bottom: 50px;
+  }
+
   /****************************/
   /* homepage grid placement  */
   /****************************/
@@ -904,11 +912,7 @@ footer{
   nav{
     padding-left: 15px;
   }
-  .photos-gallery{
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
 
-  }
   .text-block{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -1057,7 +1061,8 @@ footer{
     box-shadow: none;
   }
 
-  #otherpage header{
+  #otherpage header, #homepage,
+  #photopage, #newyorkpage{
     background-attachment: inherit;
   }
 
